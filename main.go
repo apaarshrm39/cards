@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	//var card string = "Ace of Spades"
@@ -12,9 +14,14 @@ func main() {
 	cards := newDeck()
 	hand, remainingCard := deal(cards, 15)
 	//fmt.Println(cards)
+	fmt.Println(cards.toString())
 
 	hand.print()
 	fmt.Println("Now the remaining cards")
 	remainingCard.print()
-
+	// Type coversion
+	/*
+	   greeting := "Hi there!"
+	   	fmt.Println([]byte(greeting))
+	*/
 }
